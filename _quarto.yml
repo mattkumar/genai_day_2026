@@ -1,0 +1,24 @@
+project:
+  type: default
+  output-dir: docs
+
+filters:
+  - diagrams
+  - roughnotation
+
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    embed-resources: true
+    slide-number: true
+    preview-links: auto
+    transition: slide
+    background-transition: fade
+    progress: true
+    footer: "R/Pharma genAI Day 2026 · Matthew Kumar"
+    code-copy: true
+
+execute:
+  echo: true
+  warning: false
+  message: false
