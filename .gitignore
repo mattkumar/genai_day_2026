@@ -1,6 +1,7 @@
 _output/
 *_files/
 *.html
+!beacon-01.html
 
 /.quarto/
 **/*.quarto_ipynb

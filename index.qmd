@@ -451,8 +451,10 @@ The LLM step pulls in study documents (protocol/CSP, SAP, IDRP, and others via R
 
 ## Demo {.demo-slide}
 
+[Click here to view report](https://mattkumar.github.io/genai_day_2026/beacon-01.html)
+
 ::: {.notes}
-Alt-tab to the live rendered report on Posit Connect. This slide stays intentionally blank.
+Open the linked rendered report (beacon-01.html) hosted with this deck on GitHub Pages.
 :::
 
 ## Human In The Loop (HIL)? {.section-title-slide}
