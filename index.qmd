@@ -1,5 +1,5 @@
 ---
-title: "Scheduled Clinical Insights"
+title: "Scheduled Clinical Insights 🧬"
 subtitle: "AI-Assisted Quarto Reporting for Oncology Studies"
 author: Matthew Kumar
 date: 2026-06-16
@@ -31,10 +31,12 @@ format:
             const title = document.querySelector("#title-slide .title");
             if (!title || title.dataset.colorized) return;
             const words = title.textContent.trim().split(/\s+/);
-            if (words.length !== 3) return;
-            title.innerHTML = words
+            if (words.length < 3) return;
+            const colored = words.slice(0, 3)
               .map((word, i) => `<span class="title-word-${i}">${word}</span>`)
               .join(" ");
+            const rest = words.slice(3).join(" ");
+            title.innerHTML = rest ? `${colored} ${rest}` : colored;
             title.dataset.colorized = "1";
           }
           function colorizeSectionTitleSlides() {
@@ -451,7 +453,7 @@ The LLM step pulls in study documents (protocol/CSP, SAP, IDRP, and others via R
 
 ## Demo {.demo-slide}
 
-[Click here to view report](https://mattkumar.github.io/genai_day_2026/beacon-01.html)
+[Click here to view report](https://mattkumar.github.io/genai_day_2026/beacon-01.html){target="_blank" rel="noopener noreferrer"}
 
 ::: {.notes}
 Open the linked rendered report (beacon-01.html) hosted with this deck on GitHub Pages.
